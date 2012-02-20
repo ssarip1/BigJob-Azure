@@ -16,7 +16,7 @@ if __name__ == "__main__":
     ##########################################################################################
     # Start BigJob
     # Parameter for BigJob 
-    nodes = 1 # number nodes for agent
+    nodes = 2 # number nodes for agent
     # current_directory=os.getcwd() +"/agent"  # working directory for agent
     pdb.set_trace();  
     # start pilot job (bigjob_agent)
