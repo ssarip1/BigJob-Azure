@@ -1,3 +1,4 @@
+Background:
 Many applications are computationally intensive, requiring hundreds, if not thousands of processors. Common and not so common applications include
 weather forecasting, molecular modeling, simulations, banking, etc. One such application is Replica-Exchange Molecular Dynamics (RE) . The RE methods
 represent a class of algorithms that involve a large number of loosely coupled ensembles, called replicas. By loosely coupled, we mean that the replicas need to
@@ -11,3 +12,15 @@ ally intensive problems, researchers use powerful computers called supercomputer
 expensive. Government, military and corporations commission special-purposemachines, but individual researchers usually cannot aord them. Individual re-
 searchers use shared resources, provided by universities and national scientific research grids such as the FutureGrid, Teragrid , LONI, etc. The shared
 resources operate under certain policies and guidelines, which the user needs tofollow.
+
+My Work:
+I have evaluated the performance of the different algorithms and implementations on Microsoft Windows Azure. Due to limited number of cores availability
+(20) on windows-azure, We have run the experiments by scaling-up the number of replicas (up to 20) upon keeping number of replicas to machines proportionate.
+As the number of replicas increase, in the synchronous RE, the synchronization cost increases the total time to completion. In the centralized, asynchronous RE,
+the cost of managing many replicas in a centralized manner increases the time to completion but not as much as in the synchronous RE. The decentralized asyn-
+chronous RE scales much better with increasing number of replicas.
+
+We have also run experiments of centralized-synchronous and centralized asynchronous replica-exchange algorithms on Futuregrid machines and analyzed the
+runtimes. Obviously, asynchronous replica-exchange outperformed synchronous replica-exchange as we scaled up replicas on future grid machines.
+Even though the main focus of my project is implementing the replica-exchange algorithms on windows azure, I would like to dierentiate the underlying abstrac-
+tions that Azure provides through infrastructure, messaging mechanism and queuing times compared to Futuregrid environment.
