@@ -1,0 +1,13 @@
+Many applications are computationally intensive, requiring hundreds, if not thousands of processors. Common and not so common applications include
+weather forecasting, molecular modeling, simulations, banking, etc. One such application is Replica-Exchange Molecular Dynamics (RE) . The RE methods
+represent a class of algorithms that involve a large number of loosely coupled ensembles, called replicas. By loosely coupled, we mean that the replicas need to
+communicate with each other and are bound to one-another in some way. The replicas are essentially the same simulation, but with minor dierences, such as
+temperature, etc. RE simulations are used to understand a range of physical phenomena ranging from protein folding dynamics to binding anity calculations.
+
+In RE, each replica could be a molecular-dynamics application. RE is a bit more complicated than a straightforward computationally intensive application,
+in that after each run the replicas communicate with other replicas and exchange information such as energy or temperature and restart. There could be tens or
+hundreds of coupled-ensembles in a simulation. In addition, each MD application typically needs a lot of processing power. To solve this kind of computation-
+ally intensive problems, researchers use powerful computers called supercomputers or high-performance computers (HPC). These machines are very powerful and
+expensive. Government, military and corporations commission special-purposemachines, but individual researchers usually cannot aord them. Individual re-
+searchers use shared resources, provided by universities and national scientific research grids such as the FutureGrid, Teragrid , LONI, etc. The shared
+resources operate under certain policies and guidelines, which the user needs tofollow.
